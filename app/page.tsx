@@ -21,7 +21,7 @@ export default function Page() {
 
                 <div className='relative z-10 flex max-w-3xl flex-col items-center text-center'>
                     <div className='mb-6 rounded-full border border-white/12 bg-black/25 px-6 py-2 font-mono text-sm tracking-[0.28em] text-white/75 backdrop-blur-md'>
-                        :: bio research workspace ::
+                        :: self-research ::
                     </div>
                     <h1 className='text-5xl font-semibold tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl'>
                         Massive-context AI research
