@@ -1,12 +1,14 @@
 # Self Research
 
-Self Research is a bio-research workspace built to make research at least 10x more productive.
+Self Research is an AI research agent built to make scientists 10x more productive through Recursive Language Models and real-time context sharing.
 
-The core idea is simple: most important research work is not generation, it is comparison. Researchers need to compare long papers, conflicting findings, experiment logs, notes, datasets, and multimodal evidence. This is exactly where standard LLMs fail. They degrade on long contexts, lose details across documents, and break even harder once multimodal inputs are involved.
+The core idea is simple: the biggest bottleneck in research today is comparison at scale. Scientists need to compare experimental results against massive volumes of papers, internal notes, datasets, and multimodal evidence. That information is often fragmented, inconsistent, and sometimes conflicting. The work is not just reading. The work is comparison.
+
+This is exactly where standard LLMs fail. As soon as you ask them to compare one experiment against a large body of literature, the context window becomes the bottleneck. The comparison becomes too expensive context-wise, important details get dropped, and reliability collapses. In practice, the model cannot hold enough of the evidence at once to do the job well.
 
 Self Research takes a different approach. It uses Recursive Language Models (RLMs) to process massive amounts of information through recursive decomposition, evidence comparison, and structured aggregation. In practice, this extends the usable context window by roughly 30x, enabling research workflows over the equivalent of a 30 million token context window.
 
-On top of that, results are persisted into UltraContext and made available in real time for the rest of the team through MCP.
+On top of that, research outputs are persisted into UltraContext and shared in real time with the rest of the team through MCP. The result is not just a better chat interface. It is a shared research system that can process huge amounts of scientific data and expose the resulting research live so the entire team can evaluate it using AI agents.
 
 ## Why this exists
 
@@ -14,31 +16,35 @@ Modern research is bottlenecked by context fragmentation:
 
 - important evidence is spread across long papers, supplements, datasets, and internal notes
 - comparison across sources is more valuable than summarizing any single source
+- scientists constantly need to compare experiment results against a broad and messy body of literature
+- many relevant findings are conflicting, partial, or hard to reconcile
 - standard LLMs are weak at cross-document comparison and contradiction tracing
+- context windows make this kind of research expensive and brittle
 - adding images, charts, and other modalities usually makes reliability worse
 - useful research state often stays trapped inside one person’s session instead of becoming team memory
 
-Self Research is designed to solve that problem.
+Self Research is designed to solve that problem by combining large-scale recursive reasoning with real-time context sharing.
 
 ## What Self Research does
 
 - runs recursive research workflows over very large bodies of evidence
+- processes huge amounts of papers, results, and scientific context that do not fit in normal LLM workflows
 - compares findings across papers and large datasets instead of just summarizing them
 - helps validate or falsify hypotheses
 - supports iterative experiment planning and research loops
 - stores research contexts in UltraContext
-- exposes saved research to the rest of the team through MCP
+- makes research outputs available to the entire team in real time through MCP
 
 ## Core thesis
 
-If you want to accelerate science, you need a system that can:
+If you want to make scientists dramatically more productive, you need a system that can:
 
 1. ingest large amounts of scientific context
 2. compare evidence across many sources
 3. preserve research state over time
 4. make that state accessible to the entire team immediately
 
-Self Research is that system.
+Self Research is that system: an AI research agent with massive effective context and shared team memory.
 
 ## How it works
 
