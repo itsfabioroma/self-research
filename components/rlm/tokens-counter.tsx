@@ -48,7 +48,10 @@ export function TokensCounter({ isRunning, className }: TokensCounterProps) {
     }, [isRunning]);
 
     const formatTokens = (n: number): string => {
-        return n.toLocaleString();
+        if (n >= 1_000) {
+            return `${Math.floor(n / 1_000)}K`;
+        }
+        return n.toString();
     };
 
     if (tokens === 0 && !isRunning) return null;
