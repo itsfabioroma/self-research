@@ -21,15 +21,15 @@ export default function Page() {
 
                 <div className='relative z-10 flex max-w-3xl flex-col items-center text-center'>
                     <div className='mb-6 rounded-full border border-white/12 bg-black/25 px-6 py-2 font-mono text-sm tracking-[0.28em] text-white/75 backdrop-blur-md'>
-                        :: self-research ::
+                        :: Self-Research ::
                     </div>
                     <h1 className='text-5xl font-semibold tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl'>
-                        Massive-context AI research
-                        <span className='block'>for biological discovery</span>
+                        The future of research:
+                        <span className='block'>Next-gen human-AI collaboration</span>
                     </h1>
                     <p className='mt-5 max-w-2xl text-base leading-7 text-white/68 sm:text-lg'>
-                        Use recursive language models to verify hypotheses, trace contradictions, and plan experiment loops
-                        across large biological context windows.
+                        Use recursive language models to verify hypotheses, trace contradictions, and plan experiment
+                        across large biological data
                     </p>
                     <Button
                         asChild

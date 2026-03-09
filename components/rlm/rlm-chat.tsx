@@ -43,6 +43,7 @@ export interface RLMChatProps {
     initialTreeState?: RLMTreeState;
     initialFinalResult?: string | null;
     maxDepth?: number;
+    contextMetricLabel?: string;
     className?: string;
     isAirbnbDemo?: boolean;
 }
@@ -54,6 +55,7 @@ export function RLMChat({
     initialTreeState,
     initialFinalResult = null,
     maxDepth = 1,
+    contextMetricLabel,
     className,
     isAirbnbDemo,
 }: RLMChatProps) {
@@ -263,7 +265,10 @@ export function RLMChat({
                     <div>
                         <div className='flex items-center justify-between mb-1'>
                             <label className='text-xs font-medium text-white/[0.65]'>
-                                Context <span className='text-white/[0.35]'>({context.length.toLocaleString()} chars)</span>
+                                Context{' '}
+                                <span className='text-white/[0.35]'>
+                                    ({contextMetricLabel ?? `${context.length.toLocaleString()} context`})
+                                </span>
                             </label>
                             <label className='flex cursor-pointer items-center gap-1 text-xs text-[#8ef3b7] hover:text-[#b2f8c9]'>
                                 <UploadIcon className='h-3 w-3' />
